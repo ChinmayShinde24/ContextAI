@@ -23,4 +23,3 @@ htmlcov/
 
 # Pinecone / Document stores (if saving local data)
 *.pdf
-*.txt
