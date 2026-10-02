@@ -38,7 +38,7 @@ const ChatWindow = () => {
   }
 
   return (
-    <div className="scrollbar-thin mx-auto flex h-full w-full max-w-3xl flex-col gap-4 overflow-y-auto px-4 py-6 sm:px-6">
+    <div className="scrollbar-thin flex h-full w-full flex-col gap-4 overflow-y-auto px-3 py-6 sm:px-4">
       {messages.map((message, index) => {
         const isUser = message.role === 'user'
 
@@ -49,7 +49,7 @@ const ChatWindow = () => {
             style={{ animationDelay: `${Math.min(index, 6) * 40}ms` }}
           >
             <div
-              className={`max-w-[92%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed sm:max-w-[80%] sm:px-4 sm:py-3 ${
+              className={`max-w-[95%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed sm:max-w-[92%] sm:px-4 sm:py-3 ${
                 isUser
                   ? 'rounded-br-md bg-gradient-to-br from-neutral-200 to-neutral-400 text-neutral-950'
                   : 'rounded-bl-md border border-white/10 bg-neutral-900/90 text-neutral-200'

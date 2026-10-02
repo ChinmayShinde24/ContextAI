@@ -43,7 +43,7 @@ const ChatInput = () => {
   const shouldShowPill = (!currentSessionId && document?.fileName) || pendingFileName || isUploading
 
   return (
-    <div className="mx-auto w-full max-w-3xl">
+    <div className="w-full">
       <input
         ref={inputRef}
         type="file"
