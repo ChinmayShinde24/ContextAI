@@ -5,3 +5,4 @@ pymupdf
 pinecone
 python-multipart
 google-genai
+mistralai
